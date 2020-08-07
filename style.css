@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);  
+}
+
+#pomodoro-clock{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#sessions{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.time-control{
+    margin: 20px 40px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#break-increment, #break-decrement, #session-increment, #session-decrement, #start_stop, #reset{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#break-increment, #break-decrement, #session-increment, #session-decrement{
+    margin: 10px 20px;
+    font-size: 3rem;
+}
+
+#break-length, #session-length{
+    font-size: 3.2rem;
+}
+
+#clock{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#time-left{
+    margin: 20px;
+    font-size: 4rem;
+}
+
+#start_stop, #reset{
+    margin: 0 20px;
+    font-size: 4rem;
+}
